@@ -5,6 +5,12 @@ body{
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 #content {
     height: 100%;
     display: grid;
@@ -13,8 +19,19 @@ body{
 
 #contentHeader {
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
 }
 
 #contentBody {
-    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    padding: 16px;
+}
+
+#bottomSection {
+    display: flex;
+    justify-content: space-between;
 }
