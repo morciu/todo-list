@@ -1,10 +1,20 @@
 import './style.css';
+import contentHeader from './components/header.js';
+import contentBody from './components/body.js';
 
 function component() {
-    const element = document.createElement('div');
-    element.innerText = "it's alive";
+    // create main content div
+    const content = document.createElement('div');
+    content.id = "content"
 
-    return element;
+    // load header
+    content.appendChild(contentHeader());
+
+    // load body
+    content.appendChild(contentBody());
+
+
+    return content;
 };
 
 document.body.append(component());
