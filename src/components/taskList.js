@@ -1,4 +1,4 @@
-import todos from "./todos";
+import {todos} from "./todos";
 
 export default function taskList() {
     const element = document.createElement('ul');
