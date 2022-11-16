@@ -1,14 +1,14 @@
+import todos from "./todos";
+
 export default function taskList() {
     const element = document.createElement('ul');
     element.id = "taskList";
 
-    const task1 = document.createElement('li');
-    task1.innerText = "task 1";
-    const task2 = document.createElement('li');
-    task2.innerText = "task 2";
-
-    element.appendChild(task1);
-    element.appendChild(task2);
+    todos.forEach(todo => {
+        const task = document.createElement('li');
+        task.innerText = todo.title;
+        element.appendChild(task);
+    });
 
     return element;
 };

@@ -1,6 +1,9 @@
 import './style.css';
 import contentHeader from './components/header.js';
 import contentBody from './components/body.js';
+import todos from './components/todos.js';
+
+console.log(todos);
 
 function component() {
     // create main content div
