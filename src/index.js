@@ -2,6 +2,7 @@ import './style.css';
 import contentHeader from './components/header.js';
 import contentBody from './components/body.js';
 import {Todo, addTodos} from './components/todos.js';
+import createModal from './components/createModal.js';
 
 function component() {
     // create main content div
@@ -15,6 +16,9 @@ function component() {
 
     // load body
     content.appendChild(contentBody());
+
+    //load modal
+    content.appendChild(createModal());
 
 
     return content;
