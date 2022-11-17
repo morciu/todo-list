@@ -17,11 +17,11 @@ function component() {
     // load body
     content.appendChild(contentBody());
 
-    //load modal
-    content.appendChild(createModal());
-
 
     return content;
 };
 
 document.body.append(component());
+
+// load modal
+document.body.append(createModal());

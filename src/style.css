@@ -36,15 +36,22 @@ ul {
     justify-content: space-between;
 }
 
+#modalContent {
+    margin: auto;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: min(800px, 100%);
+}
+
 #modal {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     padding-top: 100px;
-    height: auto;
-    width: min(800px, 100%);
-    background-color: bisque;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
