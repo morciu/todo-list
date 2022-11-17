@@ -1,15 +1,13 @@
 import { hideModal } from "./modalControl";
+import modalContent from "./modalContent";
 
 export default function createModal() {
     const element = document.createElement('div');
     element.id = "modal";
 
-    const modalContent = document.createElement('div');
-    modalContent.id = "modalContent";
-    modalContent.innerText = "This here is a modal!";
+    element.appendChild(modalContent());
 
-    element.appendChild(modalContent);
-
+    // event to close modal
     window.onclick = function(event) {
         if (event.target == element) {
             hideModal();
