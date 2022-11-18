@@ -13,6 +13,7 @@ export default function priorityInput() {
     lowInput.type = "radio";
     lowInput.id = "lowPriority";
     lowInput.name = "priority";
+    lowInput.checked = "checked";
 
     lowLabel.appendChild(lowInput);
 
