@@ -12,8 +12,6 @@ function component() {
     // load header
     content.appendChild(contentHeader());
 
-    addTodos(new Todo("stuff", "stuff", "stuff", "stuff", "stuff"));
-
     // load body
     content.appendChild(contentBody());
 
